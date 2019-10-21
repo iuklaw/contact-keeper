@@ -1,0 +1,41 @@
+{
+    "name": "contactkeepertutorial",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "ts-node server/index.ts",
+        "server": "nodemon -x ts-node server/index.ts",
+        "client": "npm start --prefix client",
+        "clientinstall": "npm install --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false, npm install --prefix client && npm run build --prefix client"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "config": "^3.2.3",
+        "express": "^4.17.1",
+        "express-validator": "^6.2.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.7.3",
+        "ts-node": "^8.4.1",
+        "typescript": "^3.6.3"
+    },
+    "devDependencies": {
+        "@types/body-parser": "^1.17.1",
+        "@types/bcryptjs": "^2.4.2",
+        "@types/config": "0.0.34",
+        "@types/express": "^4.17.1",
+        "@types/jsonwebtoken": "^8.3.4",
+        "@types/mongoose": "^5.5.19",
+        "@types/node": "^12.11.2",
+        "concurrently": "^5.0.0",
+        "nodemon": "^1.19.3"
+    },
+    "engines": {
+        "node": "12.1.0"
+    }
+}
