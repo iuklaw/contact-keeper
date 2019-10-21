@@ -24,11 +24,14 @@ const Navbar: FC<IProps> = ({ title = 'Contact Keeper', icon = 'fas fa-id-card-a
         clearContacts()
         logoutUser()
     }
+
+    const href = '#'
+
     const authLinks = (
         <>
             <li>Hello {user && user.name}</li>
             <li>
-                <a onClick={onLogout} style={{ cursor: "pointer" }} href="#">
+                <a onClick={onLogout} style={{ cursor: "pointer" }} href={href}>
                     <i className="fas fa-sign-out-alt"></i> <span className="hide-sm">Logout</span>
                 </a>
             </li>
