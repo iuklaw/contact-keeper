@@ -13,7 +13,7 @@
         "react-router-dom": "^5.1.2",
         "react-scripts": "3.2.0",
         "react-transition-group": "^4.3.0",
-        "typescript": "3.6.4",
+        "typescript": "^3.8.0",
         "uuid": "^3.3.3"
     },
     "scripts": {
