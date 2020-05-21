@@ -1,4 +1,4 @@
-Site preview: [click](https://glacial-depths-96954.herokuapp.com){:target="_blank"}
+Site preview: [click](https://glacial-depths-96954.herokuapp.com)
 
 login: user@user.com
 password: user123
