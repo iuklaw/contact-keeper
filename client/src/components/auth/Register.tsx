@@ -59,11 +59,11 @@ const Register: FC<{ history: History }> = (props) => {
             <form onSubmit={onSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" name="name" value={name} onChange={onChange} required />
+                    <input type="text" name="name" value={name} onChange={onChange} autoComplete="off" required />
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">Email</label>
-                    <input type="email" name="email" value={email} onChange={onChange} required />
+                    <input type="email" name="email" value={email} onChange={onChange} autoComplete="off" required />
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password</label>
